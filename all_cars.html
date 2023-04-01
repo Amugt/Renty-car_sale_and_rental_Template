@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Detail</title>
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <section id="home" class="home relative">
+        <header class="fixed top-0 left-0 right-0 z-50 bg-white">
+            <nav class="flex items-center justify-between p-4 lg:px-8">
+                <div class="flex lg:flex-1">
+                    <a href="#" class="-m-1.5 p-1.5 text-2xl font-bold"> RENTY </a>
+                </div>
+                <div class="flex lg:hidden">
+                    <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </button>
+                </div>
+                <div class="hidden lg:flex lg:gap-x-12">
+                    <a href="#" class="text-gray-800 hover:text-black font-semibold">Product</a
+            >
+
+            <a href="#" class="text-gray-800 hover:text-black font-semibold"
+              >About</a
+            >
+
+            <a href="#" class="text-gray-800 hover:text-black font-semibold"
+              >Features</a
+            >
+
+            <a href="#" class="text-gray-800 hover:text-black font-semibold"
+              >Pricing</a
+            >
+            <a href="#" class="text-gray-800 hover:text-black font-semibold"
+              >Contact</a
+            >
+            <a href="#" class="text-gray-800 hover:text-black font-semibold"
+              >Eng</a
+            >
+          </div>
+          <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+            <a
+              href="#"
+              class="px-8 py-1 text-white border-solid border-2 border-gray-900 bg-gray-900"
+              >Login <span aria-hidden="true"></span
+            ></a>
+                </div>
+            </nav>
+            <!-- Mobile menu, show/hide based on menu open state. -->
+            <!-- <div class="lg:hidden" role="dialog" aria-modal="true">
+                <div class="fixed inset-0 z-50"></div>
+                <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                    <div class="flex items-center justify-between">
+                        <a href="#" class="-m-1.5 p-1.5">
+                            <span class="sr-only">Your Company</span>
+                            <img class="h-10 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" />
+                        </a>
+                        <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+                <span class="sr-only">Close menu</span>
+                <svg
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+                    </div>
+                    <div class="mt-6 flow-root">
+                        <div class="-my-6 divide-y divide-gray-500/10">
+                            <div class="space-y-2 py-6">
+                                <a href="#" class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Product</a
+                  >
+
+                  <a
+                    href="#"
+                    class="-mx-3 text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 text-sm font-medium"
+                    >Features</a
+                  >
+
+                  <a
+                    href="#"
+                    class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    >Marketplace</a
+                  >
+
+                  <a
+                    href="#"
+                    class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    >Company</a
+                  >
+                </div>
+                <div class="py-6">
+                  <a
+                    href="#"
+                    class="-mx-3 block rounded-lg py-2.5 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    >Log in</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        </header>
+    </section>
+    <section>
+        <div class="py-16 mt-2">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                <div class="mx-auto max-w-2xl lg:text-center">
+                    <p class="mt-2 text-3xl font-bold text-black">
+                        Our Collection Cars
+                    </p>
+                </div>
+
+                <div class="w-full">
+                    <div class="flex justify-center">
+                        <nav class="flex flex-row">
+                            <p class="text-gray-800 cursor-pointer tab1opt py-4 px-6 block hover:text-indigo-500 focus:outline-none border-b-2 font-medium border-indigo-500" onclick="openTab1()">
+                                For Rent
+                            </p>
+                            <p class="text-gray-800 cursor-pointer tab2opt py-4 px-6 block hover:text-indigo-500 focus:outline-none border-b-2 font-medium" onclick="openTab2()">
+                                For Sale
+                            </p>
+                        </nav>
+                    </div>
+
+                    <div class="tab1">
+                        <div class="grid grid-cols-1 gap-y-10 gap-x-16 py-20 lg:grid-cols-3 lg:gap-y-16">
+                            <div class="px-5 py-5 bg-white shadow-lg">
+                                <div class="h-60">
+                                    <img class="rounded-sm h-full object-cover w-full" src="./assests/images/campbell-3ZUsNJhi_Ik-unsplash.jpg" alt="" />
+                                </div>
+
+                                <div class="flex justify-between">
+                                    <div class="text-black text-lg my-3 font-bold">
+                                        80,59
+                                        <span class="text-gray-400 text-sm font-light">/days</span
+                      >
+                    </div>
+                    <div class="text-gray-400 my-3 text-sm font-light">
+                      Jakarta
+                    </div>
+                  </div>
+                  <button
+                    class="bg-indigo-800 w-full py-3 my-3 text-center text-sm font-semibold text-white shadow-sm cursor-pointer"
+                  >
+                    Booking now
+                  </button>
+                </div>
+                <div class="px-5 py-5 bg-white shadow-lg">
+                  <div class="h-60">
+                    <img
+                      class="rounded-sm h-full object-cover w-full"
+                      src="./assests/images/dima-panyukov-DwxlhTvC16Q-unsplash.jpg"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="flex justify-between">
+                    <div class="text-black text-lg my-3 font-bold">
+                      80,59
+                      <span class="text-gray-400 text-sm font-light"
+                        >/days</span
+                      >
+                    </div>
+                    <div class="text-gray-400 my-3 text-sm font-light">
+                      Jakarta
+                    </div>
+                  </div>
+                  <button
+                    class="bg-gray-300 w-full py-3 my-3 text-center text-sm font-semibold text-gray-600 shadow-sm cursor-pointer"
+                  >
+                    Booking now
+                  </button>
+                </div>
+                <div class="px-5 py-5 bg-white shadow-lg">
+                  <div class="h-60">
+                    <img
+                      class="rounded-sm h-full object-cover w-full"
+                      src="./assests/images/stefan-rodriguez-2AovfzYV3rc-unsplash.jpg"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="flex justify-between">
+                    <div class="text-black text-lg my-3 font-bold">
+                      80,59
+                      <span class="text-gray-400 text-sm font-light"
+                        >/days</span
+                      >
+                    </div>
+                    <div class="text-gray-400 my-3 text-sm font-light">
+                      Jakarta
+                    </div>
+                  </div>
+                  <button
+                    class="bg-gray-300 w-full py-3 my-3 text-center text-sm font-semibold text-gray-600 shadow-sm cursor-pointer"
+                  >
+                    Booking now
+                  </button>
+                </div>
+                <div class="px-5 py-5 bg-white shadow-lg">
+                  <div class="h-60">
+                    <img
+                      class="rounded-sm h-full object-cover w-full"
+                      src="./assests/images/joshua-koblin-eqW1MPinEV4-unsplash.jpg"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="flex justify-between">
+                    <div class="text-black text-lg my-3 font-bold">
+                      80,59
+                      <span class="text-gray-400 text-sm font-light"
+                        >/days</span
+                      >
+                    </div>
+                    <div class="text-gray-400 my-3 text-sm font-light">
+                      Jakarta
+                    </div>
+                  </div>
+                  <button
+                    class="bg-gray-300 w-full py-3 my-3 text-center text-sm font-semibold text-gray-600 shadow-sm cursor-pointer"
+                  >
+                    Booking now
+                  </button>
+                </div>
+                <div class="px-5 py-5 bg-white shadow-lg">
+                  <div class="h-60">
+                    <img
+                      class="rounded-sm h-full object-cover w-full"
+                      src="./assests/images/marek-pospisil-oUBjd22gF6w-unsplash.jpg"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="flex justify-between">
+                    <div class="text-black text-lg my-3 font-bold">
+                      80,59
+                      <span class="text-gray-400 text-sm font-light"
+                        >/days</span
+                      >
+                    </div>
+                    <div class="text-gray-400 my-3 text-sm font-light">
+                      Jakarta
+                    </div>
+                  </div>
+                  <button
+                    class="bg-gray-300 w-full py-3 my-3 text-center text-sm font-semibold text-gray-600 shadow-sm cursor-pointer"
+                  >
+                    Booking now
+                  </button>
+                </div>
+                <div class="px-5 py-5 bg-white shadow-lg">
+                  <div class="h-60">
+                    <img
+                      class="rounded-sm h-full object-cover w-full"
+                      src="./assests/images/olav-tvedt-6lSBynPRaAQ-unsplash.jpg"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="flex justify-between">
+                    <div class="text-black text-lg my-3 font-bold">
+                      80,59
+                      <span class="text-gray-400 text-sm font-light"
+                        >/days</span
+                      >
+                    </div>
+                    <div class="text-gray-400 my-3 text-sm font-light">
+                      Jakarta
+                    </div>
+                  </div>
+                  <button
+                    class="bg-gray-300 w-full py-3 my-3 text-center text-sm font-semibold text-gray-600 shadow-sm cursor-pointer"
+                  >
+                    Booking now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="tab2 hidden">
+              <div
+                class="grid grid-cols-1 gap-y-10 gap-x-16 py-20 lg:grid-cols-3 lg:gap-y-16"
+              >
+                <div class="px-5 py-5 bg-white shadow-lg">
+                  <div class="h-60">
+                    <img
+                      class="rounded-sm h-full object-cover w-full"
+                      src="./assests/images/stefan-rodriguez-2AovfzYV3rc-unsplash.jpg"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="flex justify-between">
+                    <div class="text-black text-lg my-3 font-bold">
+                      80,59
+                      <span class="text-gray-400 text-sm font-light"
+                        >/days</span
+                      >
+                    </div>
+                    <div class="text-gray-400 my-3 text-sm font-light">
+                      Jakarta
+                    </div>
+                  </div>
+                  <button
+                    class="bg-indigo-800 w-full py-3 my-3 text-center text-sm font-semibold text-white shadow-sm cursor-pointer"
+                  >
+                    Booking now
+                  </button>
+                </div>
+                <div class="px-5 py-5 bg-white shadow-lg">
+                  <div class="h-60">
+                    <img
+                      class="rounded-sm h-full object-cover w-full"
+                      src="./assests/images/joshua-koblin-eqW1MPinEV4-unsplash.jpg"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="flex justify-between">
+                    <div class="text-black text-lg my-3 font-bold">
+                      80,59
+                      <span class="text-gray-400 text-sm font-light"
+                        >/days</span
+                      >
+                    </div>
+                    <div class="text-gray-400 my-3 text-sm font-light">
+                      Jakarta
+                    </div>
+                  </div>
+                  <button
+                    class="bg-gray-300 w-full py-3 my-3 text-center text-sm font-semibold text-gray-600 shadow-sm cursor-pointer"
+                  >
+                    Booking now
+                  </button>
+                </div>
+                <div class="px-5 py-5 bg-white shadow-lg">
+                  <div class="h-60">
+                    <img
+                      class="rounded-sm h-full object-cover w-full"
+                      src="./assests/images/marek-pospisil-oUBjd22gF6w-unsplash.jpg"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="flex justify-between">
+                    <div class="text-black text-lg my-3 font-bold">
+                      80,59
+                      <span class="text-gray-400 text-sm font-light"
+                        >/days</span
+                      >
+                    </div>
+                    <div class="text-gray-400 my-3 text-sm font-light">
+                      Jakarta
+                    </div>
+                  </div>
+                  <button
+                    class="bg-gray-300 w-full py-3 my-3 text-center text-sm font-semibold text-gray-600 shadow-sm cursor-pointer"
+                  >
+                    Booking now
+                  </button>
+                </div>
+                <div class="px-5 py-5 bg-white shadow-lg">
+                  <div class="h-60">
+                    <img
+                      class="rounded-sm h-full object-cover w-full"
+                      src="./assests/images/olav-tvedt-6lSBynPRaAQ-unsplash.jpg"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="flex justify-between">
+                    <div class="text-black text-lg my-3 font-bold">
+                      80,59
+                      <span class="text-gray-400 text-sm font-light"
+                        >/days</span
+                      >
+                    </div>
+                    <div class="text-gray-400 my-3 text-sm font-light">
+                      Jakarta
+                    </div>
+                  </div>
+                  <button
+                    class="bg-gray-300 w-full py-3 my-3 text-center text-sm font-semibold text-gray-600 shadow-sm cursor-pointer"
+                  >
+                    Booking now
+                  </button>
+                </div>
+                <div class="px-5 py-5 bg-white shadow-lg">
+                  <div class="h-60">
+                    <img
+                      class="rounded-sm h-full object-cover w-full"
+                      src="./assests/images/dima-panyukov-DwxlhTvC16Q-unsplash.jpg"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="flex justify-between">
+                    <div class="text-black text-lg my-3 font-bold">
+                      80,59
+                      <span class="text-gray-400 text-sm font-light"
+                        >/days</span
+                      >
+                    </div>
+                    <div class="text-gray-400 my-3 text-sm font-light">
+                      Jakarta
+                    </div>
+                  </div>
+                  <button
+                    class="bg-gray-300 w-full py-3 my-3 text-center text-sm font-semibold text-gray-600 shadow-sm cursor-pointer"
+                  >
+                    Booking now
+                  </button>
+                </div>
+                <div class="px-5 py-5 bg-white shadow-lg">
+                  <div class="h-60">
+                    <img
+                      class="rounded-sm h-full object-cover w-full"
+                      src="./assests/images/campbell-3ZUsNJhi_Ik-unsplash.jpg"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="flex justify-between">
+                    <div class="text-black text-lg my-3 font-bold">
+                      80,59
+                      <span class="text-gray-400 text-sm font-light"
+                        >/days</span
+                      >
+                    </div>
+                    <div class="text-gray-400 my-3 text-sm font-light">
+                      Jakarta
+                    </div>
+                  </div>
+                  <button
+                    class="bg-gray-300 w-full py-3 my-3 text-center text-sm font-semibold text-gray-600 shadow-sm cursor-pointer"
+                  >
+                    Booking now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-center"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const tab1 = document.querySelector(".tab1");
+      const tab2 = document.querySelector(".tab2");
+      const tab1opt = document.querySelector(".tab1opt");
+      const tab2opt = document.querySelector(".tab2opt");
+
+      function openTab2() {
+        tab1.classList.add("hidden");
+        tab2.classList.remove("hidden");
+        tab1opt.classList.remove("border-indigo-500");
+        tab2opt.classList.add("border-indigo-500");
+      }
+
+      function openTab1() {
+        tab2.classList.add("hidden");
+        tab1.classList.remove("hidden");
+        tab2opt.classList.remove("border-indigo-500");
+        tab1opt.classList.add("border-indigo-500");
+      }
+    </script>
+  </body>
+</html>

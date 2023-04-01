@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RENTY</title>
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <section id="home" class="home relative">
+      <header class="fixed top-0 left-0 right-0 z-50 bg-white">
+        <nav class="flex items-center justify-between p-4 lg:px-8">
+          <div class="flex lg:flex-1">
+            <a href="#" class="-m-1.5 p-1.5 text-2xl font-bold"> RENTY </a>
+          </div>
+          <div class="flex lg:hidden">
+            <button
+              type="button"
+              class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="hidden lg:flex lg:gap-x-12">
+            <a href="#" class="text-gray-800 hover:text-black font-semibold"
+              >Product</a
+            >
+
+            <a href="#" class="text-gray-800 hover:text-black font-semibold"
+              >About</a
+            >
+
+            <a href="#" class="text-gray-800 hover:text-black font-semibold"
+              >Features</a
+            >
+
+            <a href="#" class="text-gray-800 hover:text-black font-semibold"
+              >Pricing</a
+            >
+            <a href="#" class="text-gray-800 hover:text-black font-semibold"
+              >Contact</a
+            >
+            <a href="#" class="text-gray-800 hover:text-black font-semibold"
+              >Eng</a
+            >
+          </div>
+          <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+            <a
+              href="#"
+              class="px-8 py-1 text-white border-solid border-2 border-gray-900 bg-gray-900"
+              >Login <span aria-hidden="true"></span
+            ></a>
+          </div>
+        </nav>
+        <!-- Mobile menu, show/hide based on menu open state. -->
+        <!-- <div class="lg:hidden" role="dialog" aria-modal="true">
+            <div class="fixed inset-0 z-50"></div>
+            <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                <div class="flex items-center justify-between">
+                    <a href="#" class="-m-1.5 p-1.5">
+                        <span class="sr-only">Your Company</span>
+                        <img class="h-10 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" />
+                    </a>
+                    <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+            <span class="sr-only">Close menu</span>
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+                </div>
+                <div class="mt-6 flow-root">
+                    <div class="-my-6 divide-y divide-gray-500/10">
+                        <div class="space-y-2 py-6">
+                            <a href="#" class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Product</a
+              >
+
+              <a
+                href="#"
+                class="-mx-3 text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 text-sm font-medium"
+                >Features</a
+              >
+
+              <a
+                href="#"
+                class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                >Marketplace</a
+              >
+
+              <a
+                href="#"
+                class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                >Company</a
+              >
+            </div>
+            <div class="py-6">
+              <a
+                href="#"
+                class="-mx-3 block rounded-lg py-2.5 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                >Log in</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+      </header>
+
+      <div class="px-6 hero">
+        <div
+          class="mx-auto py-1 justify-around flex gap-2 flex-wrap sm:py-32 lg:pt-32 lg:pb-8"
+        >
+          <div class="mx-auto py-8 px-5">
+            <h1 class="text-black text-5xl font-bold">
+              Search and find your best car rental with easy way
+            </h1>
+            <p class="mt-3 text-sm leading-8 text-gray-600">
+              Drive performance and cross-functional collaboration with
+              easy-to-use dashboards, data visusalizatioins and automated
+              insights in one click
+            </p>
+
+            <div class="mt-8 flex gap-4">
+              <a
+                href="#"
+                class="bg-indigo-800 px-4 py-2.5 text-sm font-semibold text-white shadow-sm cursor-pointer"
+                >Booking now
+              </a>
+              <a
+                class="py-2.5 dribbble.com/userupload/3241467 underline"
+                href=""
+                >See all cars</a
+              >
+            </div>
+          </div>
+          <div class="">
+            <img
+              src="./assests/images/Porsche-hero.png"
+              class="w-full object-cover"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="">
+      <div class="container mx-auto">
+        <div class="lg:py-4">
+          <div class="flex pt-8 gap-4 h-10 justify-around">
+            <div>
+              <img
+                src="./assests/svg/bmw-svgrepo-com.svg"
+                alt=""
+                class="h-10"
+              />
+            </div>
+            <div>
+              <img
+                src="./assests/svg/honda-svgrepo-com.svg"
+                alt=""
+                class="h-10"
+              />
+            </div>
+
+            <div>
+              <img
+                src="./assests/svg/mitsubishi-svgrepo-com.svg"
+                alt=""
+                class="h-10"
+              />
+            </div>
+            <div>
+              <img
+                src="./assests/svg/nissan-svgrepo-com.svg"
+                alt=""
+                class="h-10"
+              />
+            </div>
+
+            <div>
+              <img
+                src="./assests/svg/tesla-svgrepo-com.svg"
+                alt=""
+                class="h-10"
+              />
+            </div>
+            <div>
+              <img
+                src="./assests/svg/toyota-svgrepo-com.svg"
+                alt=""
+                class="h-10"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="py-24 flex justify-center relative">
+        <div
+          class="grid grid-cols-1 gap-y-10 gap-x-10 lg:grid-cols-2 lg:gap-y-16 w-11/12"
+        >
+          <div>
+            <img
+              src="./assests/images/car-sales.jpeg"
+              class="object-cover w-full"
+              alt=""
+            />
+          </div>
+          <div class="lg:text-left py-2">
+            <h2 class="font-bold text-lg text-indigo-500">About Us</h2>
+            <p class="mt-2 text-4xl font-bold text-black">
+              More than 150+ special collection cars
+            </p>
+            <p class="mt-2 text-lg text-gray-400">
+              Get the car of your dreams with the installments of your choice.
+              There are <strong> various attractive </strong> offers from
+              Moladin through our collaboration with various trusted leasing
+              partners
+            </p>
+            <div class="py-5">
+              <a
+                href="./all_cars.html"
+                class="bg-indigo-800 px-4 py-2.5 text-sm font-semibold text-white shadow-sm cursor-pointer"
+                >See all cars -->
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="flex justify-center pb-32">
+        <div class="w-11/12 bg-gray-900 py-32 relative ourServices">
+          <div class="mx-auto max-w-2xl lg:text-center py-16">
+            <h2 class="font-bold text-2xl text-indigo-700">Our Services</h2>
+            <p class="mt-2 text-3xl font-bold text-white sm:text-4xl">
+              We have best service for rent cars
+            </p>
+            <p class="mt-2 text-xl text-gray-400">
+              Senras vellacus diam sagittis venenatis sed non dolor. Mauris acon
+              lorem a velit congue maximus. In jac habitasse platea dictumst
+            </p>
+          </div>
+          <div
+            class="flex justify-around gap-5 absolute top-3/4 bg-transparent w-full"
+          >
+            <div
+              class="bg-white shadow-sm shadow-gray-600 px-6 py-9 border-solid border-t-8 border-indigo-600"
+            >
+              <div class="w-32 h-32">
+                <img
+                  class="object-cover w-full"
+                  src="./assests/svg/quality-svgrepo-com.svg"
+                  alt=""
+                />
+              </div>
+              <h1 class="text-3xl text-black">Quality choice</h1>
+              <p class="text-lg text-gray-800">
+                Search from a wide selection of <br />
+                cars curated by Renty partners <br />
+                with fast and easy way
+              </p>
+            </div>
+            <div
+              class="bg-white shadow-sm shadow-gray-600 px-6 py-9 border-solid border-t-8 border-indigo-600"
+            >
+              <div class="w-32 h-32">
+                <img
+                  class="object-cover w-full"
+                  src="./assests/svg/molecule-with-rings-svgrepo-com.svg"
+                  alt=""
+                />
+              </div>
+              <h1 class="text-3xl text-black">Exclusive Service</h1>
+              <p class="text-lg text-gray-800">
+                Renty partners are ready to help <br />
+                you find your dream car for your <br />
+                holiday in the city
+              </p>
+            </div>
+            <div
+              class="bg-white shadow-sm shadow-gray-600 px-6 py-9 border-solid border-t-8 border-indigo-600"
+            >
+              <div class="w-32 h-32">
+                <img
+                  class="object-cover w-full"
+                  src="./assests/svg/fast-ship-svgrepo-com.svg"
+                  alt=""
+                />
+              </div>
+              <h1 class="text-3xl text-black">Fast and Safe</h1>
+              <p class="text-lg text-gray-800">
+                Transactions process is completed <br />
+                within 24hours (verifid by Bank of <br />
+                Indonesia)
+              </p>
+            </div>
+          </div>
+          <div></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="py-32 mt-5">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <div class="mx-auto max-w-2xl lg:text-center">
+            <h2 class="mt-4 font-bold text-xl text-indigo-700">Collection</h2>
+            <p class="mt-2 text-3xl font-bold text-black">
+              Our Collection Cars
+            </p>
+          </div>
+
+          <div class="w-full">
+            <div class="flex justify-center">
+              <nav class="flex flex-row">
+                <p
+                  class="text-gray-800 cursor-pointer tab1opt py-4 px-6 block hover:text-indigo-500 focus:outline-none border-b-2 font-medium border-indigo-500"
+                  onclick="openTab1()"
+                >
+                  For Rent
+                </p>
+                <p
+                  class="text-gray-800 cursor-pointer tab2opt py-4 px-6 block hover:text-indigo-500 focus:outline-none border-b-2 font-medium"
+                  onclick="openTab2()"
+                >
+                  For Sale
+                </p>
+              </nav>
+            </div>
+
+            <div class="tab1">
+              <div
+                class="grid grid-cols-1 gap-y-10 gap-x-16 py-20 lg:grid-cols-3 lg:gap-y-16"
+              >
+                <div class="px-5 py-5 bg-white shadow-lg">
+                  <div class="h-60">
+                    <img
+                      class="rounded-sm h-full object-cover w-full"
+                      src="./assests/images/campbell-3ZUsNJhi_Ik-unsplash.jpg"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="flex justify-between">
+                    <div class="text-black text-lg my-3 font-bold">
+                      80,59
+                      <span class="text-gray-400 text-sm font-light"
+                        >/days</span
+                      >
+                    </div>
+                    <div class="text-gray-400 my-3 text-sm font-light">
+                      Jakarta
+                    </div>
+                  </div>
+                  <button
+                    class="bg-indigo-800 w-full py-3 my-3 text-center text-sm font-semibold text-white shadow-sm cursor-pointer"
+                  >
+                    Booking now
+                  </button>
+                </div>
+                <div class="px-5 py-5 bg-white shadow-lg">
+                  <div class="h-60">
+                    <img
+                      class="rounded-sm h-full object-cover w-full"
+                      src="./assests/images/dima-panyukov-DwxlhTvC16Q-unsplash.jpg"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="flex justify-between">
+                    <div class="text-black text-lg my-3 font-bold">
+                      80,59
+                      <span class="text-gray-400 text-sm font-light"
+                        >/days</span
+                      >
+                    </div>
+                    <div class="text-gray-400 my-3 text-sm font-light">
+                      Jakarta
+                    </div>
+                  </div>
+                  <button
+                    class="bg-gray-300 w-full py-3 my-3 text-center text-sm font-semibold text-gray-600 shadow-sm cursor-pointer"
+                  >
+                    Booking now
+                  </button>
+                </div>
+                <div class="px-5 py-5 bg-white shadow-lg">
+                  <div class="h-60">
+                    <img
+                      class="rounded-sm h-full object-cover w-full"
+                      src="./assests/images/stefan-rodriguez-2AovfzYV3rc-unsplash.jpg"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="flex justify-between">
+                    <div class="text-black text-lg my-3 font-bold">
+                      80,59
+                      <span class="text-gray-400 text-sm font-light"
+                        >/days</span
+                      >
+                    </div>
+                    <div class="text-gray-400 my-3 text-sm font-light">
+                      Jakarta
+                    </div>
+                  </div>
+                  <button
+                    class="bg-gray-300 w-full py-3 my-3 text-center text-sm font-semibold text-gray-600 shadow-sm cursor-pointer"
+                  >
+                    Booking now
+                  </button>
+                </div>
+                <div class="px-5 py-5 bg-white shadow-lg">
+                  <div class="h-60">
+                    <img
+                      class="rounded-sm h-full object-cover w-full"
+                      src="./assests/images/joshua-koblin-eqW1MPinEV4-unsplash.jpg"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="flex justify-between">
+                    <div class="text-black text-lg my-3 font-bold">
+                      80,59
+                      <span class="text-gray-400 text-sm font-light"
+                        >/days</span
+                      >
+                    </div>
+                    <div class="text-gray-400 my-3 text-sm font-light">
+                      Jakarta
+                    </div>
+                  </div>
+                  <button
+                    class="bg-gray-300 w-full py-3 my-3 text-center text-sm font-semibold text-gray-600 shadow-sm cursor-pointer"
+                  >
+                    Booking now
+                  </button>
+                </div>
+                <div class="px-5 py-5 bg-white shadow-lg">
+                  <div class="h-60">
+                    <img
+                      class="rounded-sm h-full object-cover w-full"
+                      src="./assests/images/marek-pospisil-oUBjd22gF6w-unsplash.jpg"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="flex justify-between">
+                    <div class="text-black text-lg my-3 font-bold">
+                      80,59
+                      <span class="text-gray-400 text-sm font-light"
+                        >/days</span
+                      >
+                    </div>
+                    <div class="text-gray-400 my-3 text-sm font-light">
+                      Jakarta
+                    </div>
+                  </div>
+                  <button
+                    class="bg-gray-300 w-full py-3 my-3 text-center text-sm font-semibold text-gray-600 shadow-sm cursor-pointer"
+                  >
+                    Booking now
+                  </button>
+                </div>
+                <div class="px-5 py-5 bg-white shadow-lg">
+                  <div class="h-60">
+                    <img
+                      class="rounded-sm h-full object-cover w-full"
+                      src="./assests/images/olav-tvedt-6lSBynPRaAQ-unsplash.jpg"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="flex justify-between">
+                    <div class="text-black text-lg my-3 font-bold">
+                      80,59
+                      <span class="text-gray-400 text-sm font-light"
+                        >/days</span
+                      >
+                    </div>
+                    <div class="text-gray-400 my-3 text-sm font-light">
+                      Jakarta
+                    </div>
+                  </div>
+                  <button
+                    class="bg-gray-300 w-full py-3 my-3 text-center text-sm font-semibold text-gray-600 shadow-sm cursor-pointer"
+                  >
+                    Booking now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="tab2 hidden">
+              <div
+                class="grid grid-cols-1 gap-y-10 gap-x-16 py-20 lg:grid-cols-3 lg:gap-y-16"
+              >
+                <div class="px-5 py-5 bg-white shadow-lg">
+                  <div class="h-60">
+                    <img
+                      class="rounded-sm h-full object-cover w-full"
+                      src="./assests/images/stefan-rodriguez-2AovfzYV3rc-unsplash.jpg"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="flex justify-between">
+                    <div class="text-black text-lg my-3 font-bold">
+                      80,59
+                      <span class="text-gray-400 text-sm font-light"
+                        >/days</span
+                      >
+                    </div>
+                    <div class="text-gray-400 my-3 text-sm font-light">
+                      Jakarta
+                    </div>
+                  </div>
+                  <button
+                    class="bg-indigo-800 w-full py-3 my-3 text-center text-sm font-semibold text-white shadow-sm cursor-pointer"
+                  >
+                    Booking now
+                  </button>
+                </div>
+                <div class="px-5 py-5 bg-white shadow-lg">
+                  <div class="h-60">
+                    <img
+                      class="rounded-sm h-full object-cover w-full"
+                      src="./assests/images/joshua-koblin-eqW1MPinEV4-unsplash.jpg"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="flex justify-between">
+                    <div class="text-black text-lg my-3 font-bold">
+                      80,59
+                      <span class="text-gray-400 text-sm font-light"
+                        >/days</span
+                      >
+                    </div>
+                    <div class="text-gray-400 my-3 text-sm font-light">
+                      Jakarta
+                    </div>
+                  </div>
+                  <button
+                    class="bg-gray-300 w-full py-3 my-3 text-center text-sm font-semibold text-gray-600 shadow-sm cursor-pointer"
+                  >
+                    Booking now
+                  </button>
+                </div>
+                <div class="px-5 py-5 bg-white shadow-lg">
+                  <div class="h-60">
+                    <img
+                      class="rounded-sm h-full object-cover w-full"
+                      src="./assests/images/marek-pospisil-oUBjd22gF6w-unsplash.jpg"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="flex justify-between">
+                    <div class="text-black text-lg my-3 font-bold">
+                      80,59
+                      <span class="text-gray-400 text-sm font-light"
+                        >/days</span
+                      >
+                    </div>
+                    <div class="text-gray-400 my-3 text-sm font-light">
+                      Jakarta
+                    </div>
+                  </div>
+                  <button
+                    class="bg-gray-300 w-full py-3 my-3 text-center text-sm font-semibold text-gray-600 shadow-sm cursor-pointer"
+                  >
+                    Booking now
+                  </button>
+                </div>
+                <div class="px-5 py-5 bg-white shadow-lg">
+                  <div class="h-60">
+                    <img
+                      class="rounded-sm h-full object-cover w-full"
+                      src="./assests/images/olav-tvedt-6lSBynPRaAQ-unsplash.jpg"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="flex justify-between">
+                    <div class="text-black text-lg my-3 font-bold">
+                      80,59
+                      <span class="text-gray-400 text-sm font-light"
+                        >/days</span
+                      >
+                    </div>
+                    <div class="text-gray-400 my-3 text-sm font-light">
+                      Jakarta
+                    </div>
+                  </div>
+                  <button
+                    class="bg-gray-300 w-full py-3 my-3 text-center text-sm font-semibold text-gray-600 shadow-sm cursor-pointer"
+                  >
+                    Booking now
+                  </button>
+                </div>
+                <div class="px-5 py-5 bg-white shadow-lg">
+                  <div class="h-60">
+                    <img
+                      class="rounded-sm h-full object-cover w-full"
+                      src="./assests/images/dima-panyukov-DwxlhTvC16Q-unsplash.jpg"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="flex justify-between">
+                    <div class="text-black text-lg my-3 font-bold">
+                      80,59
+                      <span class="text-gray-400 text-sm font-light"
+                        >/days</span
+                      >
+                    </div>
+                    <div class="text-gray-400 my-3 text-sm font-light">
+                      Jakarta
+                    </div>
+                  </div>
+                  <button
+                    class="bg-gray-300 w-full py-3 my-3 text-center text-sm font-semibold text-gray-600 shadow-sm cursor-pointer"
+                  >
+                    Booking now
+                  </button>
+                </div>
+                <div class="px-5 py-5 bg-white shadow-lg">
+                  <div class="h-60">
+                    <img
+                      class="rounded-sm h-full object-cover w-full"
+                      src="./assests/images/campbell-3ZUsNJhi_Ik-unsplash.jpg"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="flex justify-between">
+                    <div class="text-black text-lg my-3 font-bold">
+                      80,59
+                      <span class="text-gray-400 text-sm font-light"
+                        >/days</span
+                      >
+                    </div>
+                    <div class="text-gray-400 my-3 text-sm font-light">
+                      Jakarta
+                    </div>
+                  </div>
+                  <button
+                    class="bg-gray-300 w-full py-3 my-3 text-center text-sm font-semibold text-gray-600 shadow-sm cursor-pointer"
+                  >
+                    Booking now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-center">
+              <a
+                href="./all_cars.html"
+                class="bg-indigo-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm cursor-pointer"
+              >
+                See all cars -->
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="flex justify-center relative">
+        <div class="w-11/12 bg-indigo-600 py-24 z-10 letsDrive">
+          <div class="mx-auto max-w-2xl lg:text-center py-16">
+            <p class="mt-2 text-3xl font-bold text-white sm:text-4xl">
+              Let's drive Renty today
+            </p>
+            <p class="mt-2 text-xl text-gray-50">
+              Get the app to explore the world of premium cars get fast and safe
+              Transaction to help you find your dreams rent
+            </p>
+            <div class="flex gap-4 justify-center mt-5">
+              <a
+                href="#"
+                class="px-8 py-2 rounded-sm text-white border-solid border-2 border-gray-900 bg-gray-900"
+                >Appstore</a
+              >
+              <a
+                href="#"
+                class="px-8 py-2 rounded-sm text-white border-solid border-2 border-gray-900 bg-gray-900"
+                >GooglePlay</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="bottom-0 h-40 p-16 bg-black absolute w-full"></div>
+      </div>
+    </section>
+    <section>
+      <div class="flex justify-around bg-black w-full py-5">
+        <div>
+          <h1 class="font-bold text-2xl text-white">Renty</h1>
+        </div>
+        <div class="flex justify-center gap-3 flex-row">
+          <div class="text-gray-50 text-md">Home</div>
+          <div class="text-gray-50 text-md">About</div>
+          <div class="text-gray-50 text-md">Category</div>
+          <div class="text-gray-50 text-md">Resources</div>
+        </div>
+        <div class="flex justify-center gap-3 flex-row">
+          <div
+            class="text-gray-50 rounded-full border-gray-50 px-2 border-solid border-2 text-md"
+          >
+            F
+          </div>
+          <div
+            class="text-gray-50 rounded-full border-gray-50 px-2 border-solid border-2 text-md"
+          >
+            T
+          </div>
+          <div
+            class="text-gray-50 rounded-full border-gray-50 px-2 border-solid border-2 text-md"
+          >
+            I
+          </div>
+          <div
+            class="text-gray-50 rounded-full border-gray-50 px-2 border-solid border-2 text-md"
+          >
+            T
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const tab1 = document.querySelector(".tab1");
+      const tab2 = document.querySelector(".tab2");
+      const tab1opt = document.querySelector(".tab1opt");
+      const tab2opt = document.querySelector(".tab2opt");
+
+      function openTab2() {
+        tab1.classList.add("hidden");
+        tab2.classList.remove("hidden");
+        tab1opt.classList.remove("border-indigo-500");
+        tab2opt.classList.add("border-indigo-500");
+      }
+
+      function openTab1() {
+        tab2.classList.add("hidden");
+        tab1.classList.remove("hidden");
+        tab2opt.classList.remove("border-indigo-500");
+        tab1opt.classList.add("border-indigo-500");
+      }
+    </script>
+  </body>
+</html>

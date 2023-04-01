@@ -1,0 +1,13 @@
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.ourServices {
+    background: url(./assests/svg/blob-scene-haikei.svg);
+    background-size: cover;
+}
+
+.letsDrive {
+    background: url(./assests/svg/blob-scene-haikei\(3\).svg);
+    background-size: cover;
+}
