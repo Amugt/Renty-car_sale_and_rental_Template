@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Car Detail</title>
     <link rel="stylesheet" href="./output.css" />
     <link rel="stylesheet" href="./style.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <section id="home" class="home relative">
-        <header class="fixed top-0 left-0 right-0 z-50 bg-white">
-            <nav class="flex items-center justify-between p-4 lg:px-8">
-                <div class="flex lg:flex-1">
-                    <a href="#" class="-m-1.5 p-1.5 text-2xl font-bold"> RENTY </a>
-                </div>
-                <div class="flex lg:hidden">
-                    <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+      <header class="fixed top-0 left-0 right-0 z-50 bg-white">
+        <nav class="flex items-center justify-between p-4 lg:px-8">
+          <div class="flex lg:flex-1">
+            <a href="#" class="-m-1.5 p-1.5 text-2xl font-bold"> RENTY </a>
+          </div>
+          <div class="flex lg:hidden">
+            <button
+              type="button"
+              class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+            >
               <span class="sr-only">Open main menu</span>
               <svg
                 class="h-6 w-6"
@@ -35,9 +37,10 @@
                 />
               </svg>
             </button>
-                </div>
-                <div class="hidden lg:flex lg:gap-x-12">
-                    <a href="#" class="text-gray-800 hover:text-black font-semibold">Product</a
+          </div>
+          <div class="hidden lg:flex lg:gap-x-12">
+            <a href="#" class="text-gray-800 hover:text-black font-semibold"
+              >Product</a
             >
 
             <a href="#" class="text-gray-800 hover:text-black font-semibold"
@@ -64,10 +67,10 @@
               class="px-8 py-1 text-white border-solid border-2 border-gray-900 bg-gray-900"
               >Login <span aria-hidden="true"></span
             ></a>
-                </div>
-            </nav>
-            <!-- Mobile menu, show/hide based on menu open state. -->
-            <!-- <div class="lg:hidden" role="dialog" aria-modal="true">
+          </div>
+        </nav>
+        <!-- Mobile menu, show/hide based on menu open state. -->
+        <!-- <div class="lg:hidden" role="dialog" aria-modal="true">
                 <div class="fixed inset-0 z-50"></div>
                 <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
                     <div class="flex items-center justify-between">
@@ -128,26 +131,67 @@
             </div>
           </div>
         </div> -->
-        </header>
+      </header>
 
-        <div class="px-6">
-            <div class="grid grid-cols-1 gap-y-10 gap-x-16 py-20 lg:grid-cols-2 lg:gap-y-16">
-                <div class="">
-                    <img class="rounded-sm object-cover w-full" src="./assests/images/joshua-koblin-eqW1MPinEV4-unsplash.jpg" alt="" />
-                </div>
-
-                <div class="py-8">
-                    <h1 class="text-black text-xl font-bold">Porche 911</h1>
-                    <p class="mt-3 text-lg leading-8 text-gray-600">80,89</p>
-
-                    <div class="mt-8 flex gap-4">
-                        <a href="#" class="bg-indigo-800 px-4 py-2.5 text-sm font-semibold text-white shadow-sm cursor-pointer">Booking now
-              </a>
-                    </div>
-                </div>
+      <div class="px-6">
+        <div
+          class="grid grid-cols-1 gap-y-10 gap-x-16 py-20 lg:grid-cols-2 lg:gap-y-16"
+        >
+          <div class="col-span-2">
+            <div class="h-72">
+              <img
+                class="rounded-sm object-cover w-full main-car-pic"
+                src="./assests/images/joshua-koblin-eqW1MPinEV4-unsplash.jpg"
+                alt=""
+              />
             </div>
-        </div>
-    </section>
-</body>
+            <div class="car-detail-images">
+              <div class="car-pics">
+                <img
+                  class=""
+                  src="./assests/images/stefan-rodriguez-2AovfzYV3rc-unsplash.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="car-pics">
+                <img
+                  class=""
+                  src="./assests/images/joshua-koblin-eqW1MPinEV4-unsplash.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="car-pics">
+                <img
+                  class=""
+                  src="./assests/images/stefan-rodriguez-2AovfzYV3rc-unsplash.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="car-pics">
+                <img
+                  class=""
+                  src="./assests/images/campbell-3ZUsNJhi_Ik-unsplash.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
 
+          <div class="py-8">
+            <h1 class="text-black text-xl font-bold">Porche 911</h1>
+            <p class="mt-3 text-lg leading-8 text-gray-600">80,89</p>
+
+            <div class="mt-8 flex gap-4">
+              <a
+                href="#"
+                class="bg-indigo-800 px-4 py-2.5 text-sm font-semibold text-white shadow-sm cursor-pointer"
+                >Booking now
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="./app.js"></script>
 </html>
